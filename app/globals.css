@@ -30,6 +30,7 @@ body {
   font-family: "Times New Roman", Georgia, serif;
   background: var(--navy);
   text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
 }
 
 button,
@@ -44,6 +45,7 @@ h1,
 h2,
 h3 {
   font-family: "Times New Roman", Georgia, serif;
+  font-feature-settings: "kern";
 }
 
 ::selection {
