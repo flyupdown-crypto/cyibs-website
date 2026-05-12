@@ -88,6 +88,9 @@ function Header() {
           <Link className="hover:text-white" href="/#network">
             Network
           </Link>
+          <Link className="hover:text-white" href="/contact">
+            Contact
+          </Link>
         </div>
 
         <div className="flex items-center gap-2 sm:gap-3">
@@ -98,12 +101,12 @@ function Header() {
           >
             EN / 中文
           </button>
-          <a
+          <Link
             className="hidden min-h-12 items-center justify-center rounded-full bg-warm-white px-6 text-sm font-semibold text-navy transition hover:bg-white md:inline-flex"
-            href="#consultation"
+            href="/contact"
           >
             Book Consultation
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
@@ -131,12 +134,12 @@ export default function ProgrammesPage() {
               ecosystem for future global business leaders.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
-              <a
+              <Link
                 className="inline-flex min-h-12 items-center justify-center rounded-full bg-warm-white px-6 text-sm font-semibold text-navy transition hover:bg-white"
-                href="#consultation"
+                href="/contact"
               >
                 Book Consultation
-              </a>
+              </Link>
               <a
                 className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/20 px-6 text-sm font-semibold text-warm-white transition hover:border-sky-300/60 hover:text-white"
                 href="#summer"
@@ -245,12 +248,12 @@ export default function ProgrammesPage() {
                 Book a consultation to discuss programme fit and next steps.
               </h2>
             </div>
-            <a
+            <Link
               className="inline-flex min-h-12 items-center justify-center rounded-full bg-navy px-6 text-sm font-semibold text-white transition hover:bg-[#102441]"
-              href="#consultation"
+              href="/contact"
             >
               Book Consultation
-            </a>
+            </Link>
           </div>
         </div>
       </section>

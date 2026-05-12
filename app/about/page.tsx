@@ -76,6 +76,9 @@ function Header() {
           <Link className="hover:text-white" href="/#network">
             Network
           </Link>
+          <Link className="hover:text-white" href="/contact">
+            Contact
+          </Link>
         </div>
 
         <div className="flex items-center gap-2 sm:gap-3">
@@ -86,12 +89,12 @@ function Header() {
           >
             EN / 中文
           </button>
-          <a
+          <Link
             className="hidden min-h-12 items-center justify-center rounded-full bg-warm-white px-6 text-sm font-semibold text-navy transition hover:bg-white md:inline-flex"
-            href="#consultation"
+            href="/contact"
           >
             Book Consultation
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
@@ -196,12 +199,12 @@ export default function AboutPage() {
                 Discuss whether YBS is the right fit for your child or family.
               </h2>
             </div>
-            <a
+            <Link
               className="inline-flex min-h-12 items-center justify-center rounded-full bg-navy px-6 text-sm font-semibold text-white transition hover:bg-[#102441]"
-              href="#consultation"
+              href="/contact"
             >
               Book Consultation
-            </a>
+            </Link>
           </div>
         </div>
       </section>

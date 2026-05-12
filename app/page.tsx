@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 const whyYbs = [
@@ -95,12 +96,12 @@ function ConsultationButton({
   };
 
   return (
-    <a
+    <Link
       className={`inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold transition ${styles[variant]}`}
-      href="#consultation"
+      href="/contact"
     >
       {children}
-    </a>
+    </Link>
   );
 }
 
@@ -109,7 +110,7 @@ export default function Home() {
     <main className="min-h-screen overflow-hidden bg-navy text-warm-white">
       <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-navy/86 backdrop-blur-xl">
         <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-5 sm:px-8 lg:px-10">
-          <a className="flex min-w-0 items-center gap-3" href="#top" aria-label="YBS home">
+          <Link className="flex min-w-0 items-center gap-3" href="/" aria-label="YBS home">
             <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-sm border border-white/12 bg-white shadow-[0_16px_40px_rgba(0,0,0,0.25)]">
               <Image
                 alt="YBS"
@@ -126,21 +127,24 @@ export default function Home() {
                 Cambridge Youth International Business School
               </span>
             </span>
-          </a>
+          </Link>
 
           <div className="hidden items-center gap-8 text-sm text-white/68 lg:flex">
             <a className="hover:text-white" href="#why">
               Why YBS
             </a>
-            <a className="hover:text-white" href="#programme">
+            <Link className="hover:text-white" href="/programmes">
               Programme
-            </a>
+            </Link>
+            <Link className="hover:text-white" href="/about">
+              About
+            </Link>
             <a className="hover:text-white" href="#journey">
               Journey
             </a>
-            <a className="hover:text-white" href="#network">
-              Network
-            </a>
+            <Link className="hover:text-white" href="/contact">
+              Contact
+            </Link>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-3">
