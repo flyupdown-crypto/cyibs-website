@@ -1,6 +1,19 @@
 @import "tailwindcss";
 
 :root {
+  --navy: #050d1d;
+  --warm-white: #f6f1e7;
+  --future-blue: #72c8ff;
+  --ink-muted: rgba(246, 241, 231, 0.68);
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-warm-white: var(--warm-white);
+  --color-future-blue: var(--future-blue);
+}
+
+:root {
   color-scheme: dark;
 }
 
@@ -14,6 +27,26 @@ html {
 
 body {
   margin: 0;
+  font-family: "Times New Roman", Georgia, serif;
+  background: var(--navy);
+  text-rendering: geometricPrecision;
+}
+
+button,
+a,
+p,
+span,
+li {
   font-family: Arial, Helvetica, sans-serif;
-  background: #020617;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Times New Roman", Georgia, serif;
+}
+
+::selection {
+  background: rgba(114, 200, 255, 0.32);
+  color: white;
 }

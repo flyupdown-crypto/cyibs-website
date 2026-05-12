@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CYIBS",
-  description: "CYIBS website built with Next.js, TypeScript, Tailwind CSS, and the App Router.",
+  title: "YBS - Cambridge Youth International Business School",
+  description:
+    "Premium Cambridge summer business leadership programme for globally minded young leaders.",
 };
 
 export default function RootLayout({
